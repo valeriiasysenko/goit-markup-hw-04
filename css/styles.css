@@ -34,6 +34,8 @@ img{
 }
 .header {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+        background: #fff;
 }
 
 .header-container{
@@ -207,6 +209,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 8px;
     background-color: #f4f4fd;
 }
 .quality-item-icon{
@@ -271,6 +274,11 @@ img{
     width: 40px;
     height: 40px;
 }
+.team-item{
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+        background: #fff;
+
+}
 .team-icon-link{
     height: 100%;
     width: 100%;
@@ -309,10 +317,6 @@ img{
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
-.team-item:hover{
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-        background: #fff;
-}
 
 .team-image {
 }
@@ -327,7 +331,7 @@ img{
         margin-bottom: 8px;
 }
 .team-container{
-    padding: 32px;
+    padding: 32px 0;
 }
 .team-text {
         font-weight: 400;
@@ -462,7 +466,6 @@ img{
         width: 264px;
 }
 .footer-social-text{
-    font-family: "Roboto", sans-serif;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -475,6 +478,7 @@ img{
 }
 .container-footer{
     display: flex;
+    align-items: baseline;
 }
 .footer-list{
     display: flex;
@@ -500,9 +504,9 @@ img{
     height: 40px;
 }
 .fotter-icon-link:hover {
-    background-color: #404bbf;
+    background-color: #31d0aa;
 }
 
 .footer-icon-link:focus {
-    background-color: #404bbf;
+    background-color: #31d0aa;
 }
