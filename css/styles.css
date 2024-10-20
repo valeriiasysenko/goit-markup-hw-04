@@ -39,6 +39,8 @@ img{
 .header-container{
     display: flex;
     align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .navigation {
     display: flex;
@@ -54,8 +56,6 @@ img{
         text-transform: uppercase;
         color: #4d5ae5;
         margin-right: 76px;
-        padding-top: 24px;
-        padding-bottom: 24px;
 }
 
 .text-logo{
@@ -76,15 +76,23 @@ img{
 
 .navigation-item {
 }
-
+.active::after{
+    content: "";
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    background: #404bbf;
+    display: block;
+    position: absolute;
+    bottom: -28px;
+}
 .navigation-link {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    position: relative;
 }
 .navigation-link:hover{
     color: #404bbf;
@@ -125,8 +133,14 @@ img{
     background: #2e2f42;
     padding-top: 188px;
     padding-bottom: 188px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ) 
+    , url(../images/people-office-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-size: cover;
 }
-
 .page-title {
         font-weight: 700;
         font-size: 56px;
@@ -173,6 +187,12 @@ img{
 
 .section-quality {}
 
+.container-icon{
+    padding: 24px 100px;
+}
+.quality-item-icon{
+   
+}
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -203,6 +223,7 @@ img{
         letter-spacing: 0.02em;
         color: #2e2f42;
         margin-bottom: 8px;
+        margin-top: 8px;
 }
 
 .section-quality-text {
@@ -227,7 +248,13 @@ img{
     color: #2e2f42;
     margin: 0 auto 72px auto;
 }
-
+.team-icon{
+    fill:  #4d5ae5; 
+}
+.team-icon-list{
+    display: flex;
+    column-gap: 24px;
+}
 .team-list {
     display: flex;
     gap: 24px;
@@ -238,6 +265,10 @@ img{
     width: calc((100% - 3 * 24px)/ 4);
     border-radius: 0px 0px 4px 4px;
     
+}
+.team-item:hover{
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+        background: #fff;
 }
 
 .team-image {
@@ -253,8 +284,7 @@ img{
         margin-bottom: 8px;
 }
 .team-container{
-    padding: 32px 0;
-
+    padding: 32px 16px;
 }
 .team-text {
         font-weight: 400;
@@ -263,6 +293,7 @@ img{
         letter-spacing: 0.02em;
         text-align: center;
         color: #434455;
+        margin-bottom: 8px;
 }
 
 /*------------------------------Section-portfolio----------------*/
