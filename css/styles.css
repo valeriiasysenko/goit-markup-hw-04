@@ -93,9 +93,11 @@ img{
     letter-spacing: 0.02em;
     color: #2e2f42;
     position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation-link:hover{
     color: #404bbf;
+
 }
 .navigation-link:focus{
     color: #404bbf;
@@ -121,6 +123,7 @@ img{
     color: #434455;
     padding-top: 24px;
     padding-bottom: 24px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-link:hover{
     color: #404bbf;
@@ -173,6 +176,7 @@ img{
     border: none;
     margin-left: auto;
     margin-right: auto;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .container-buttom{
 
@@ -248,8 +252,12 @@ img{
     color: #2e2f42;
     margin: 0 auto 72px auto;
 }
-.team-icon{
-    fill:  #4d5ae5; 
+.team-icon-item{
+    fill: #4d5ae5;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-icon-item:hover{
+    fill: #31d0aa;;
 }
 .team-icon-list{
     display: flex;
@@ -264,6 +272,7 @@ img{
     background-color: #FFFFFF;
     width: calc((100% - 3 * 24px)/ 4);
     border-radius: 0px 0px 4px 4px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .team-item:hover{
@@ -299,6 +308,35 @@ img{
 /*------------------------------Section-portfolio----------------*/
 .section-portfolio {}
 
+.portfolio-text-hover{
+    font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #f4f4fd;
+        position: absolute;
+        background-color: #4d5ae5;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 40px 32px;
+        transform: translateY(100%);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-container-image{
+    position: relative;
+    overflow: hidden;
+
+}
+.portfolio-item:hover .portfolio-text-hover{
+    transform: translateY(0);
+}
+.portfolio-item:hover{
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+
+}
 .portfolio-title {
         font-weight: 700;
         font-size: 36px;
@@ -325,6 +363,7 @@ img{
 }
 .portfolio-item {
     flex-basis: calc((100% - 2 * 24px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-image {
@@ -348,12 +387,15 @@ img{
 }
 
 /*---------------------------Footer-------------------*/
-.footer {
+.footer{
     background: #2e2f42;
     padding-top: 100px;
     padding-bottom: 100px;
+    padding-left: 168px;
 }
-
+.container-footer{
+    
+}
 .footer-link {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -385,4 +427,35 @@ img{
         letter-spacing: 0.02em;
         color: #f4f4fd;
         width: 264px;
+}
+.footer-icon-item{
+    fill: #4d5ae5;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.footer-icon-item:hover{
+    fill: #31d0aa;
+}
+.footer-social-text{
+    font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #fff;
+        margin-bottom: 16px;
+}
+.footer-container-social{
+    
+}
+.container-footer{
+    display: flex;
+}
+.footer-list{
+    display: flex;
+    gap: 16px;
+}
+.container-link-logo{
+    margin-right: 120px;
+
 }
